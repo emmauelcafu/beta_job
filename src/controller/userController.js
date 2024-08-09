@@ -5,7 +5,8 @@ const userController = async()=>{
     try {
         const dataUrl = await axios.get(url)
         const datainfo= dataUrl.data
-        return datainfo;
+        
+        return {datainfo};
     } catch (error) {
             console.log("error of usercontroller:", error)
     }

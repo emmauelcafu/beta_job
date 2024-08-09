@@ -1,4 +1,5 @@
 const {userController}= require("../controller/userController")
+
 const userHandler = async(req,res)=>{
     try {
         
@@ -10,5 +11,5 @@ const userHandler = async(req,res)=>{
     }
 }
 
-
+    
 module.exports ={userHandler}
