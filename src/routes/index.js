@@ -1,10 +1,10 @@
 const {Router}= require("express");
 const {userRouter}= require("./userRouter")
-const {formsPublicRouter}= require("./formsPublicRouter")
+const {formsPostRouter}= require("./formsPostRouter")
 
 const router = Router();
 router.use("/", userRouter)
-router.use("/formsPublic", formsPublicRouter)
+router.use("/formsPost", formsPostRouter)
 
 
 module.exports = router;

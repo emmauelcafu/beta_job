@@ -1,9 +1,9 @@
-const express = require("express");
+const express = require('express');
 const server = express();
-const router = require("./routes/index")
+const router = require('./routes/index');
 
-// Middleware para la ruta principal
-server.use("/", router);
-
+server.use(express.json()); // Middleware para parsear JSON
+server.use('/', router);   // Configurar las rutas principales
 
 module.exports = server;
+
